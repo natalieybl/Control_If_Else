@@ -64,7 +64,7 @@
         <button onclick="assignAndCheck()">Submit</button>
         <div id="result" class="result"></div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
     <script>
         // Web3.js is required to interact with Solidity contracts
         if (typeof window.ethereum !== 'undefined') {
@@ -72,6 +72,7 @@
         } else {
             alert('Please install MetaMask to use this feature.');
         }
+	    
         const contractAddress = '0x5a357aa1E9e59961994256AF22c35014aA9B65bD'; // Replace with your contract's address
         // Contract ABI and Address (Replace with your contract's details)
         const contractABI = [
@@ -130,6 +131,6 @@
             }
         }
     </script>
-    <script src="https://cdn.jsdelivr.net/npm/web3@1.3.4/dist/web3.min.js"></script>
+
 </body>
 </html>
